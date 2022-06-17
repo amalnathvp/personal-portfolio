@@ -14,11 +14,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+ 
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
@@ -33,6 +29,15 @@
 </head>
 
 <body>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // offset: 300,
+        duration: 1000,
+      }
+      );
+    </script>
 
 
     <!-- preloader -->
@@ -219,7 +224,7 @@
 
 
     <!-- start about-me -->
-    <section id="about-me" class="section about-me has-style-01 " data-aos="fade-in">
+    <section id="about-me" class="section about-me has-style-01 " >
 
         <div class="shape">
             <img class="shape-04" src="assets/images/shape/shape-what-i-do2.png" alt="shape">
@@ -232,15 +237,15 @@
                 <!-- start heading-title -->
                 <div class="col-lg-5">
                     <div class="heading-title">
-                        <h3>About Me</h3>
-                        <h2>Hi, Im Amal Nath <br> </h2>
-                        <p>I am a back-end developer from Kerala,India. with a strong focus in Web Development.
+                        <h3 data-aos="fade-up">About Me</h3>
+                        <h2 data-aos="fade-up">Hi, Im Amal Nath <br> </h2>
+                        <p data-aos="fade-up">I am a back-end developer from Kerala,India. with a strong focus in Web Development.
                              I am just a beginner and try to learn something day by day.
                              I love to get new experiences and always learn from my surroundings. I've done more than 15 projects.
                         </p>
                     </div>
 
-                    <ul class="row row-cols-md-2 row-cols-2 info">
+                    <ul class="row row-cols-md-2 row-cols-2 info" data-aos="fade-up">
                         <li><i class="fi fi-rr-check"></i> Problem Solving</li>
                         <li><i class="fi fi-rr-check"></i> Self Development</li>
                         <li><i class="fi fi-rr-check"></i> Search A Lot</li>
@@ -780,14 +785,7 @@
 
 
     <!-- scripts -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        // offset: 300,
-        duration: 1000,
-      }
-      );
-    </script>
+    
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/mixitup.min.js"></script>
