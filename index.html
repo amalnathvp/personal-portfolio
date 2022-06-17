@@ -12,12 +12,13 @@
     <link rel="shortcut icon" href="assets/images/icon/favicon.png" type="image/x-icon" />
     <!-- stylesheet -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 <!-- Google Font-->
-<link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<!-- <link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
 <!-- Font Awesome -->
-<link rel="stylesheet" href="assets/icons/font-awesome-4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="assets/icons/font-awesome-4.7.0/css/font-awesome.min.css"> -->
 <!-- Bootstrap CSS -->
 <!-- <link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css">     -->
 <!-- Animate CSS-->
@@ -29,6 +30,11 @@
 <!-- Custom CSS-->
 <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
 <link rel="stylesheet" href="assets/css/responsive.css">
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
@@ -103,7 +109,7 @@
 
                 <!-- start hero-content -->
                 <div class="col-lg-6 col-md-6 col-12">
-                    <div class="hero-content">
+                    <div class="hero-content" data-aos="fade-right" >
 
                         <!-- start info -->
                         <h3 class="title-welcome">hello</h3>
@@ -113,7 +119,7 @@
 
                         <!-- start link -->
                         <ul class="link d-flex">
-                            <li><a class="btn btn-generic" href="#">hire me</a></li>
+                            <li><a class="btn btn-generic" href="#" >hire me</a></li>
                             <!-- <li><a class="btn btn-link" href="#">download cv <i class="fa-solid fa-download"></i></a></li> -->
                         </ul>
                         <!-- end link -->
@@ -165,9 +171,9 @@
 
 
     <!-- start what-do -->
-    <section id="services" class="section what-do has-style-01 fadeInUp">
+    <section id="services" class="section what-do has-style-01 ">
 
-        <div class="shape fadeInUp">
+        <div class="shape">
             <img class="shape-03" src="assets/images/shape/shape-03.png" alt="shape">
             <img class="shape-04" src="assets/images/shape/shape-what-i-do2.png" alt="shape">
             <img class="shape-05" src="assets/images/shape/shape-what-i-do1.png" alt="shape">
@@ -178,7 +184,7 @@
             <div class="row align-items-center justify-content-between flex-row-reverse">
 
                 <!-- start heading-title -->
-                <div class="col-lg-5 col-md-6 col-12">
+                <div class="col-lg-5 col-md-6 col-12" data-aos="fade-left">
                     <div class="heading-title fadeInup">
                         <h3>what i do</h3>
                         <h2>Develop, Design, <br> Edit</h2>
@@ -193,14 +199,14 @@
                         <div class="col-lg-6 col-md-12">
                             <div class="row">
 
-                                <div class="col-12">
+                                <div class="col-12" data-aos="fade-in" data-aos-delay="50">
                                     <div class="box">
                                         <div class="icon"><i class="fa-solid fa-mobile-screen"></i></div>
                                         <h4>Web <br> Development</h4>
                                     </div>
                                 </div>
 
-                                <div class="col-12">
+                                <div class="col-12" data-aos="fade-in" data-aos-delay="70">
                                     <div class="box">
                                         <div class="icon"><i class="fa-solid fa-desktop"></i></div>
                                         <h4>Website <br> Design</h4>
@@ -210,7 +216,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-6 col-md-12">
+                        <div class="col-lg-6 col-md-12" data-aos="fade-in" data-aos-delay="90">
                             <div class="box">
                                 <div class="icon"><i class="fa-solid fa-paintbrush"></i></div>
                                 <h4>Graphic <br> Design</h4>
@@ -229,7 +235,7 @@
 
 
     <!-- start about-me -->
-    <section id="about-me" class="section about-me has-style-01 zoom-in">
+    <section id="about-me" class="section about-me has-style-01 " data-aos="fade-in">
 
         <div class="shape">
             <img class="shape-04" src="assets/images/shape/shape-what-i-do2.png" alt="shape">
@@ -288,10 +294,10 @@
             <img class="shape-08" src="assets/images/shape/shape-statistics2.png" alt="shape">
         </div>
 
-        <div class="container zoom-in">
+        <div class="container">
             <div class="row">
 
-                <div class="col-lg-3 col-md-6 col-12">
+                <div class="col-lg-3 col-md-6 col-12 ">
                     <div class="progress" data-percentage="95">
                         <span class="progress-left"><span class="progress-bar"></span></span>
                         <span class="progress-right"><span class="progress-bar"></span></span>
@@ -372,7 +378,7 @@
 
                 <!-- start item-card -->
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 mix web">
-                    <div class="item-card">
+                    <div class="item-card ">
                         <h4><a class="title-link" href="https://github.com/amalnathvp/ecommerce-website">E-Commerce Website</a></h4>
                         <p>This is a dynamic webpage created using nodejs, express, mongodb, etc... It 
                             includes lot of features and this is one of my biggest project
@@ -788,7 +794,16 @@
     <!-- end scroll up -->
 
 
+
     <!-- scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // offset: 300,
+        duration: 1000,
+      }
+      );
+    </script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/mixitup.min.js"></script>
